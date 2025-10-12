@@ -35,10 +35,12 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .services, .skills, .teams, .contact, footer{
+.about, .experience, .timeline, .services, .skills, .teams, .contact, footer{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
+.timeline .timeline-content,
+.experience .exp-content,
 .services .serv-content,
 .skills .skills-content,
 .contact .contact-content{
@@ -271,6 +273,148 @@ section .title::after{
     background: none;
 }
 
+/* experience section styling */
+/* Section */
+.experience {
+  background:#bcc1cd;
+  color:#111;                 /* darker text for contrast */
+  padding:64px 0;
+}
+
+/* Layout: stack cards vertically with space */
+.experience .exp-content{
+  max-width:1200px;
+  margin:0 auto;
+  padding:0 24px;
+  display:flex;
+  flex-direction:column;
+  gap:48px;
+}
+
+/* Card look → full-width pill */
+.experience .exp-content .card{
+  width:100%;
+  background:#eef2f7;         /* light bluish */
+  border-radius:22px;
+  padding:24px 28px;
+  box-shadow:0 18px 30px rgba(0,0,0,.08);
+  transition:transform .15s ease, box-shadow .15s ease;
+}
+.experience .exp-content .card:hover{
+  transform:translateY(-2px);
+  box-shadow:0 24px 40px rgba(0,0,0,.12);
+}
+
+/* Remove underline coming from inline style */
+.experience .exp-content .card .text{
+  text-decoration:none !important;
+}
+
+/* Turn inner box into a 3-column row */
+.experience .exp-content .card .box{
+  display:grid;
+  grid-template-columns: 1fr auto 1fr; /* left | center | right */
+  align-items:center;
+  column-gap:24px;
+}
+
+/* Hide the icon (optional). If you want it, set display:inline-flex and position it before the title. */
+.experience .exp-content .card i{
+  display:none;
+}
+
+/* Left: company name */
+.experience .exp-content .card .text{
+  grid-column:1;
+  font-size:28px;
+  font-weight:800;
+  color:#111;
+  margin:0;
+}
+
+/* Reset p styles */
+.experience .exp-content .card p{
+  margin:0;
+  color:#333;
+  font-size:18px;
+  line-height:1.4;
+}
+
+/* Center: dates = first <p> inside .box */
+.experience .exp-content .card .box p:nth-of-type(1){
+  grid-column:2;
+  font-weight:700;
+  text-align:center;
+}
+
+/* Right: role + location in one line (2nd and 3rd <p>) */
+.experience .exp-content .card .box p:nth-of-type(2),
+.experience .exp-content .card .box p:nth-of-type(3){
+  grid-column:3;      /* put both in same grid cell */
+  grid-row:1;         /* same row so they sit inline */
+  display:inline;     /* inline so they sit side by side */
+  white-space:nowrap;
+  text-align:right;
+  justify-self:end;
+}
+.experience .exp-content .card .box p:nth-of-type(2)::after{
+  content:" ";
+}
+
+/* Make the second card a neutral gray (optional) */
+.experience .exp-content .card:nth-child(2){
+  background:#f6f6f6;
+}
+
+/* Responsive: stack content nicely on small screens */
+@media (max-width: 720px){
+  .experience .exp-content .card .box{
+    grid-template-columns:1fr;
+    row-gap:10px;
+  }
+  .experience .exp-content .card .text,
+  .experience .exp-content .card .box p:nth-of-type(1),
+  .experience .exp-content .card .box p:nth-of-type(2),
+  .experience .exp-content .card .box p:nth-of-type(3){
+    grid-column:1 !important;
+    grid-row:auto;
+    text-align:left;
+    justify-self:start;
+  }
+  .experience .exp-content .card .box p:nth-of-type(2)::after{
+    content:" ";
+  }
+}
+
+.card .top-row {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+/* Hide details by default */
+.card .details {
+  margin-top: 14px;
+  font-size: 15px;
+  color: #444;
+}
+
+/* Bullet style */
+.card .details ul {
+  padding-left: 18px;
+  margin: 0;
+}
+.card .details ul li {
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+/* Show on hover OR click */
+.card:hover .details {
+  display: block;
+}
+
 /* services section styling */
 .services, .teams{
     color:#fff;
@@ -325,6 +469,9 @@ section .title::after{
 
 .skills .title::after{
     content: "";
+}
+.skills .skills-content{
+    align-items: normal;
 }
 .skills .skills-content .column{
     width: calc(50% - 30px);
@@ -384,20 +531,47 @@ section .title::after{
     background: #246ca0;
     /* background: crimson; */
 }
-.skills-content .right .html::before{
+.skills-content .right .java::before{
     width: 90%;
 }
-.skills-content .right .css::before{
-    width: 60%;
+.skills-content .right .scala::before{
+    width: 75%;
 }
-.skills-content .right .js::before{
+.skills-content .right .go::before{
+    width: 85%;
+}
+.skills-content .right .docker::before{
     width: 80%;
 }
-.skills-content .right .php::before{
+.skills-content .right .k8s::before{
+    width: 70%;
+}
+.skills-content .right .jenkins::before{
+    width: 90%;
+}
+.skills-content .right .git::before{
+    width: 98%;
+}
+.skills-content .right .ms::before{
+    width: 80%;
+}
+.skills-content .right .sd::before{
+    width: 85%;
+}
+.skills-content .right .mdb::before{
+    width: 80%;
+}
+.skills-content .right .redis::before{
+    width: 60%;
+}
+.skills-content .right .mvn::before{
+    width: 80%;
+}
+.skills-content .right .nj::before{
     width: 50%;
 }
-.skills-content .right .mysql::before{
-    width: 70%;
+.skills-content .right .agl::before{
+    width: 95%;
 }
 
 /* teams section styling */
