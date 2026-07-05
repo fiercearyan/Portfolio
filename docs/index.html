@@ -62,440 +62,358 @@
     }
     </script>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/3e587aac7c.js" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-
 </head>
 
 <body>
-    <div class="scroll-up-btn">
-        <i class="fas fa-angle-up"></i>
-    </div>
-    <nav class="navbar">
-        <div class="max-width">
-            <div class="logo"><a href="#">Portfo<span>lio.</span></a></div>
-            <ul class="menu">
-                <li><a href="#home" class="menu-btn">Home</a></li>
-                <li><a href="#about" class="menu-btn">About</a></li>
-                <li><a href="#experience" class="menu-btn">Experience</a></li>
-                <li><a href="#services" class="menu-btn">Education</a></li>
-                <li><a href="#skills" class="menu-btn">Skills</a></li>
-                <li><a href="#teams" class="menu-btn">Projects</a></li>
-                <li><a href="#contact" class="menu-btn">Contact</a></li>
-            </ul>
-            <div class="menu-btn">
-                <i class="fas fa-bars"></i>
-            </div>
+
+    <!-- NAV -->
+    <nav class="nav">
+        <div class="nav-logo"><span>&gt;</span>aryan<span>@</span>backend<span>:~$</span></div>
+        <div class="nav-links">
+            <a href="#about">01.about</a>
+            <a href="#experience">02.experience</a>
+            <a href="#education">03.education</a>
+            <a href="#skills">04.skills</a>
+            <a href="#projects">05.projects</a>
+            <a href="#contact" class="nav-cta">06.contact</a>
         </div>
     </nav>
 
-    <!-- home section start -->
-    <section class="home" id="home">
-        <div class="max-width">
-            <div class="home-content">
-                <div class="text-1">Hello, I am</div>
-                <div class="text-2">Aryan Singh</div>
-                <div class="text-3">And I'm <span class="typing"></span></div>
-                <a href="https://www.linkedin.com/in/aryan-singh07/" target="_blank"><i
-                        class="fa-brands fa-linkedin"></i></a>
-                <a href="https://leetcode.com/fierce/" target="_blank"><i class="fa-solid fa-code"></i></a>
-                <a href="mailto:aryankrsingh7@gmail.com?" target="_blank"><i class="fa-solid fa-envelope"></i></a>
-                <a href="https://github.com/fiercearyan" target="_blank"><i class="fa-brands fa-github"></i></a>
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div class="hero-left">
+            <div class="hero-prompt">$ whoami</div>
+            <h1>Aryan Kumar<br>Singh</h1>
+            <div class="hero-role">Backend Software Engineer</div>
+            <p class="hero-blurb">
+                4 years building high-performance backend systems with Java, Spring Boot, Scala, and Go.
+                Production experience at IBM and Amadeus — scalable services, distributed data, and clean
+                system design.
+            </p>
+            <div class="hero-btns">
+                <a class="btn-primary" href="Aryan_Kumar_Singh_Resume.pdf" target="_blank" rel="noopener">↓ Download CV</a>
+                <a class="btn-ghost" href="#projects">View projects →</a>
+            </div>
+            <div class="hero-socials">
+                <a href="https://github.com/fiercearyan" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://www.linkedin.com/in/aryan-singh07/" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="https://leetcode.com/fierce/" target="_blank" rel="noopener">LeetCode</a>
+                <a href="mailto:aryankrsingh7@gmail.com">Email</a>
             </div>
         </div>
-    </section>
 
-    <!-- about section start -->
-    <section class="about" id="about">
-        <div class="max-width">
-            <h2 class="title">About me</h2>
-            <div class="about-content">
-                <div class="column left">
-                    <img src="images/profile-photo.jpg" alt="Aryan Kumar Singh — Backend Software Engineer">
+        <div class="hero-right">
+            <div class="term">
+                <div class="term-bar">
+                    <div class="term-dot r"></div>
+                    <div class="term-dot y"></div>
+                    <div class="term-dot g"></div>
+                    <div class="term-file">profile.json</div>
                 </div>
-                <div class="column right">
-                    <div class="text">I'm Aryan and I'm <span class="typing-2"></span></div>
-                    <p>
-                        Backend Software Engineer with 4 years of experience building high-performance, distributed
-                        systems using Java, Spring Boot, Scala, and Go. Currently at IBM India Software Labs, engineering
-                        microservices for IBM Watsonx's Agentic AI platform; previously built high-volume, real-time
-                        airline financial systems at Amadeus. Two-time IBM Special Recognition Award winner with a
-                        proven record of cutting latency, accelerating deployments, and shipping production-grade,
-                        cloud-native solutions on Kubernetes and AWS. Passionate about system design, clean code, and
-                        engineering excellence.
-                    </p>
-                    <a href="Aryan_Kumar_Singh_Resume.pdf" target="_blank">Download CV</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience section start -->
-    <section class="experience" id="experience">
-        <div class="max-width">
-            <h2 class="title">Experience</h2>
-            <div class="exp-content">
-                <div class="card">
-                    <div class="box">
-                        <div class="text" style="text-decoration: underline;">IBM India Software Labs</div>
-                        <p style="font-weight: 600">Jul 2024 - Present</p>
-                        <p>Software Developer</p>
-                    </div>
-                    <div class="details">
-                        <ul>
-                            <li>Engineered Java, Spring Boot, Scala, and Go based microservices for IBM Watsonx's
-                                Agentic AI platform, delivering concurrent, high-performance RESTful APIs.</li>
-                            <li>Reduced AI model onboarding time by 18% by streamlining deployment pipelines across
-                                model families including BYOM, Foundation Models, LoRA, and TSFM.</li>
-                            <li>Accelerated deployment rollout speed by 26% through Kubernetes and Docker orchestration
-                                optimizations and CI/CD automation on AWS (EKS, EC2, S3).</li>
-                            <li>Migrated distributed state storage from ETCD to Redis and implemented a caching layer,
-                                cutting read latency by 28% and improving throughput for high-frequency access
-                                patterns.</li>
-                            <li>Cut debugging and production issue investigation effort by 35% by implementing
-                                distributed tracing and monitoring with OpenTelemetry and Instana.</li>
-                            <li>Engineered Kafka and RabbitMQ event-driven pipelines with Redis caching and optimized
-                                MongoDB interaction patterns for fault-tolerant, high-throughput workload processing.</li>
-                            <li>Built an end-to-end AI model lifecycle simulator and Go-based FVT validation frameworks
-                                that surfaced critical integration defects pre-release — earning the IBM Special
-                                Recognition Award (x2).</li>
-                            <li>Led HLD/LLD design sessions and code reviews, mentoring junior engineers and onboarding
-                                new members on backend services and deployment workflows.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <div class="text" style="text-decoration: underline;">Amadeus Software Labs</div>
-                        <p style="font-weight: 600;">Aug 2022 - Jul 2024</p>
-                        <p>Software Development Engineer</p>
-                    </div>
-                    <div class="details">
-                        <ul>
-                            <li>Developed and scaled Java Spring Boot REST APIs for high-volume, real-time airline
-                                financial workflows on AWS (EC2, S3), with a focus on concurrency, reliability, and
-                                low-latency performance tuning.</li>
-                            <li>Reduced MongoDB query latency by 15% for high-volume transactional workloads through
-                                systematic profiling, indexing, and targeted query tuning.</li>
-                            <li>Automated build, test, and CI/CD pipelines with Jenkins, cutting deployment time by 35%
-                                and increasing deployment consistency.</li>
-                            <li>Used ElasticSearch and Kibana for real-time anomaly detection, fast-tracking production
-                                issue resolution by 55%.</li>
-                            <li>Secured 3rd rank in the Amadeus Hackathon, building a scalable backend prototype.</li>
-                            <li>Troubleshot and resolved production issues and conducted code reviews applying design
-                                patterns, enforcing engineering best practices and system stability across the team.</li>
-                        </ul>
-                    </div>
+                <div class="term-body">
+                    <div><span class="pc">{</span></div>
+                    <div class="ind"><span class="pk">"role"</span>: <span class="pv">"Software Developer"</span>,</div>
+                    <div class="ind"><span class="pk">"experience"</span>: <span class="pn">"4 years"</span>,</div>
+                    <div class="ind"><span class="pk">"companies"</span>: [<span class="pv">"IBM"</span>, <span class="pv">"Amadeus"</span>],</div>
+                    <div class="ind"><span class="pk">"stack"</span>: [<span class="pv">"Java"</span>, <span class="pv">"Spring Boot"</span>, <span class="pv">"Scala"</span>, <span class="pv">"Go"</span>],</div>
+                    <div class="ind"><span class="pk">"focus"</span>: <span class="pv">"distributed systems"</span>,</div>
+                    <div class="ind"><span class="pk">"location"</span>: <span class="pv">"Bangalore, IN"</span>,</div>
+                    <div class="ind"><span class="pk">"open_to_work"</span>: <span class="pb">true</span><span class="cursor"></span></div>
+                    <div><span class="pc">}</span></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- services section start -->
-    <section class="services" id="services">
-        <div class="max-width">
-            <h2 class="title">Education</h2>
-            <div class="serv-content">
-                <div class="card">
-                    <div class="box">
-                        <i class="fa-solid fa-building-columns"></i>
-                        <div class="text" style="text-decoration: underline;">Graduation</div>
-                        <p style="font-weight: 700;">B.Tech in Information Technology<br>Haldia Institute of Technology<br>Haldia, WB</p>
-                        <p>2018-22</p>
-                        <p>CGPA: 8.55</p>
-                    </div>
+    <!-- ABOUT -->
+    <section class="section about-wrap" id="about">
+        <div class="about-label">
+            <span class="section-num">01</span>
+            <h2 class="section-title">About</h2>
+        </div>
+        <div class="about-body">
+            <img class="about-photo" src="images/profile-photo.jpg" alt="Aryan Kumar Singh — Backend Software Engineer">
+            <p>
+                I'm a backend software engineer with <strong>4 years of hands-on experience</strong> building
+                high-performance, distributed systems using Java, Spring Boot, Scala, and Go. At
+                <strong>IBM India Software Labs</strong> I engineer microservices for IBM Watsonx's Agentic AI
+                platform; before that I built high-volume, real-time airline financial systems at
+                <strong>Amadeus</strong>. Two-time <strong>IBM Special Recognition Award</strong> winner with a
+                proven record of cutting latency, accelerating deployments, and shipping production-grade,
+                cloud-native solutions — passionate about clean code, system design, and engineering excellence.
+            </p>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience">
+        <div class="section-head">
+            <div class="section-num">02</div>
+            <h2 class="section-title">Experience</h2>
+        </div>
+        <div>
+            <div class="job">
+                <div class="job-period">Jul 2024 — Present</div>
+                <div class="job-main">
+                    <div class="job-role">Software Developer</div>
+                    <div class="job-company">IBM India Software Labs</div>
+                    <div class="job-bullet"><span class="tick">▸</span><span>Engineered Java, Spring Boot, Scala, and Go based microservices for IBM Watsonx's Agentic AI platform, delivering concurrent, high-performance RESTful APIs.</span></div>
+                    <div class="job-bullet"><span class="tick">▸</span><span>Reduced AI model onboarding time by 18% by streamlining deployment pipelines across model families including BYOM, Foundation Models, LoRA, and TSFM.</span></div>
+                    <div class="job-bullet"><span class="tick">▸</span><span>Accelerated deployment rollout speed by 26% through Kubernetes and Docker orchestration optimizations and CI/CD automation on AWS (EKS, EC2, S3).</span></div>
+                    <div class="job-bullet"><span class="tick">▸</span><span>Migrated distributed state storage from ETCD to Redis and implemented a caching layer, cutting read latency by 28% and improving throughput for high-frequency access patterns.</span></div>
+                    <div class="job-bullet"><span class="tick">▸</span><span>Cut debugging and production issue investigation effort by 35% by implementing distributed tracing and monitoring with OpenTelemetry and Instana.</span></div>
+                    <div class="job-bullet"><span class="tick">▸</span><span>Engineered Kafka and RabbitMQ event-driven pipelines with Redis caching and optimized MongoDB interaction patterns for fault-tolerant, high-throughput workload processing.</span></div>
+                    <div class="job-bullet"><span class="tick">▸</span><span>Built an end-to-end AI model lifecycle simulator and Go-based FVT validation frameworks that surfaced critical integration defects pre-release — earning the IBM Special Recognition Award (x2).</span></div>
+                    <div class="job-bullet"><span class="tick">▸</span><span>Led HLD/LLD design sessions and code reviews, mentoring junior engineers and onboarding new members on backend services and deployment workflows.</span></div>
                 </div>
-                <div class="card">
-                    <div class="box">
-                        <i class="fa-solid fa-school"></i>
-                        <div class="text" style="text-decoration: underline;">Intermediate</div>
-                        <p style="font-weight: 700;">DAV Centenary Public School<br>Siwan, Bihar</p>
-                        <p>2017</p>
-                        <p>Percentage: 84.40</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <i class="fa-solid fa-school-flag"></i>
-                        <div class="text" style="text-decoration: underline;"> Matriculation</div>
-                        <p style="font-weight: 700;">Emmanuel Mission High School<br>Siwan, Bihar</p>
-                        <p>2015</p>
-                        <p>CGPA: 9.4</p>
-                    </div>
+            </div>
+            <div class="job">
+                <div class="job-period">Aug 2022 — Jul 2024</div>
+                <div class="job-main">
+                    <div class="job-role">Software Development Engineer</div>
+                    <div class="job-company">Amadeus Software Labs</div>
+                    <div class="job-bullet"><span class="tick">▸</span><span>Developed and scaled Java Spring Boot REST APIs for high-volume, real-time airline financial workflows on AWS (EC2, S3), with a focus on concurrency, reliability, and low-latency performance tuning.</span></div>
+                    <div class="job-bullet"><span class="tick">▸</span><span>Reduced MongoDB query latency by 15% for high-volume transactional workloads through systematic profiling, indexing, and targeted query tuning.</span></div>
+                    <div class="job-bullet"><span class="tick">▸</span><span>Automated build, test, and CI/CD pipelines with Jenkins, cutting deployment time by 35% and increasing deployment consistency.</span></div>
+                    <div class="job-bullet"><span class="tick">▸</span><span>Used ElasticSearch and Kibana for real-time anomaly detection, fast-tracking production issue resolution by 55%.</span></div>
+                    <div class="job-bullet"><span class="tick">▸</span><span>Secured 3rd rank in the Amadeus Hackathon, building a scalable backend prototype.</span></div>
+                    <div class="job-bullet"><span class="tick">▸</span><span>Troubleshot and resolved production issues and conducted code reviews applying design patterns, enforcing engineering best practices and system stability across the team.</span></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- skills section start -->
-    <section class="skills" id="skills">
-        <div class="max-width">
-            <h2 class="title">Skills</h2>
-            <div class="skills-content">
-                <div class="column left">
-                    <div class="text">I have knowledge about <span class="typing-3" style="color: #3191d6;"></span></div>
-                    <p>I started my journey with Java as my core programming language, and over time my curiosity pushed me to explore more powerful backend technologies.
-                        <br>Working on real-world systems at IBM and Amadeus, I picked up Scala for scalable services and Go for its performance and simplicity in microservice architectures, building RESTful APIs with Spring Boot along the way.
-                        <br>As I moved into containerized environments, I became comfortable with Docker and Kubernetes, deploying to AWS (EKS, EC2, S3) and automating CI/CD with Jenkins and Git.
-                        <br>Designing distributed backends taught me event-driven architecture with Kafka and RabbitMQ, high-speed caching with Redis, and flexible document storage with MongoDB — plus observability with OpenTelemetry and Instana.
-                        <br>Over time, I developed a strong foundation in System Design (HLD/LLD), which helps me build reliable, high-performance architectures that handle real production workloads.
-                    </p>
-                    <a href="https://github.com/fiercearyan" target="_blank">Visit GitHub</a>
-                </div>
-                <div class="column right">
-                    <div class="bars">
-                        <div class="info">
-                            <span>JAVA</span>
-                        </div>
-                        <div class="line java"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>Spring Boot</span>
-                        </div>
-                        <div class="line sb"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>Go</span>
-                        </div>
-                        <div class="line go"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>Scala</span>
-                        </div>
-                        <div class="line scala"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>Microservice</span>
-                        </div>
-                        <div class="line ms"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>System Design</span>
-                        </div>
-                        <div class="line sd"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>Docker</span>
-                        </div>
-                        <div class="line docker"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>Kubernetes</span>
-                        </div>
-                        <div class="line k8s"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>AWS</span>
-                        </div>
-                        <div class="line aws"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>Kafka</span>
-                        </div>
-                        <div class="line kafka"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>Redis</span>
-                        </div>
-                        <div class="line redis"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>MongoDB</span>
-                        </div>
-                        <div class="line mdb"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>Jenkins</span>
-                        </div>
-                        <div class="line jenkins"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>Git</span>
-                        </div>
-                        <div class="line git"></div>
-                    </div>
-                </div>
+    <!-- EDUCATION -->
+    <section class="section" id="education">
+        <div class="section-head">
+            <div class="section-num">03</div>
+            <h2 class="section-title">Education</h2>
+        </div>
+        <div class="edu-grid">
+            <div class="edu-card">
+                <div class="edu-period">2018 — 2022</div>
+                <div class="edu-degree">B.Tech, Information Technology</div>
+                <div class="edu-school">Haldia Institute of Technology</div>
+                <div class="edu-loc">Haldia, WB</div>
+                <div class="edu-detail">CGPA: 8.55</div>
+            </div>
+            <div class="edu-card">
+                <div class="edu-period">2017</div>
+                <div class="edu-degree">Intermediate (Class XII)</div>
+                <div class="edu-school">DAV Centenary Public School</div>
+                <div class="edu-loc">Siwan, Bihar</div>
+                <div class="edu-detail">Percentage: 84.40%</div>
+            </div>
+            <div class="edu-card">
+                <div class="edu-period">2015</div>
+                <div class="edu-degree">Matriculation (Class X)</div>
+                <div class="edu-school">Emmanuel Mission High School</div>
+                <div class="edu-loc">Siwan, Bihar</div>
+                <div class="edu-detail">CGPA: 9.4</div>
             </div>
         </div>
     </section>
 
-    <!-- projects section start -->
-    <section class="teams" id="teams">
-        <div class="max-width">
-            <h2 class="title">Projects</h2>
-            <div class="carousel owl-carousel">
-                <div class="card">
-                    <div class="box">
-                        <img src="images/tripperr.png" alt="Tripperr — AI-powered travel planner">
-                        <div class="text">Tripperr</div>
-                        <p>AI-powered travel planner</p>
-                        <p>Personalized itineraries & trip recommendations</p>
-                    </div>
-                    <div class="proj-btn">
-                        <div class="proj-btns">
-                            <a href="https://github.com/Trip-perr/tripperr-backend" target="_blank">GitHub</a>
-                        </div>
-                        <div class="proj-btns">
-                            <a href="https://www.tripperr.in" target="_blank">Live</a>
-                        </div>
-                    </div>
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+        <div class="section-head">
+            <div class="section-num">04</div>
+            <h2 class="section-title">Skills</h2>
+        </div>
+
+        <div class="skill-grid">
+            <div class="skill-card">
+                <div class="skill-name">Languages</div>
+                <div class="skill-chips">
+                    <div class="chip">Java</div>
+                    <div class="chip">Scala</div>
+                    <div class="chip">Go</div>
+                    <div class="chip">SQL</div>
                 </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="images/openroles.png" alt="OpenRoles — AI-powered job discovery platform">
-                        <div class="text">OpenRoles</div>
-                        <p>Smart job discovery platform</p>
-                        <p>Resume matching & AI recommendations</p>
-                    </div>
-                    <div class="proj-btn">
-                        <div class="proj-btns">
-                            <a href="https://github.com/fiercearyan/RefreshedJobs" target="_blank">GitHub</a>
-                        </div>
-                        <div class="proj-btns">
-                            <a href="https://refreshed-jobs.vercel.app/" target="_blank">Live</a>
-                        </div>
-                    </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-name">Backend & Frameworks</div>
+                <div class="skill-chips">
+                    <div class="chip">Spring Boot</div>
+                    <div class="chip">Microservices</div>
+                    <div class="chip">RESTful APIs</div>
+                    <div class="chip">Node.js</div>
                 </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="images/resumeai.png" alt="ResumeAI — ATS resume analyzer and optimizer">
-                        <div class="text">ResumeAI</div>
-                        <p>ATS resume analyzer & optimizer</p>
-                        <p>Powered by AI</p>
-                    </div>
-                    <div class="proj-btn">
-                        <div class="proj-btns">
-                            <a href="https://github.com/fiercearyan/ResumeAI" target="_blank">GitHub</a>
-                        </div>
-                    </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-name">System Design</div>
+                <div class="skill-chips">
+                    <div class="chip">HLD / LLD</div>
+                    <div class="chip">Distributed Systems</div>
+                    <div class="chip">Event-Driven Architecture</div>
                 </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="images/gp.png" alt="Grievance Portal — complaint management system">
-                        <div class="text">Grievance Portal</div>
-                        <p>Complaint management system</p>
-                        <p>Role-based access & issue tracking</p>
-                    </div>
-                    <div class="proj-btn">
-                        <div class="proj-btns">
-                            <a href="https://github.com/fiercearyan/grievance-portal" target="_blank">GitHub</a>
-                        </div>
-                        <div class="proj-btns">
-                            <a href="https://fiercearyan.github.io/grievance-portal/" target="_blank">Live</a>
-                        </div>
-                    </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-name">DevOps & Cloud</div>
+                <div class="skill-chips">
+                    <div class="chip">Docker</div>
+                    <div class="chip">Kubernetes</div>
+                    <div class="chip">Jenkins</div>
+                    <div class="chip">CI/CD</div>
+                    <div class="chip">AWS</div>
                 </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="images/man.jpg" alt="Portfolio website of Aryan Kumar Singh">
-                        <div class="text">Portfolio</div>
-                        <p>This website particularly</p>
-                        <p>This is where you are!!</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-name">Data & Caching</div>
+                <div class="skill-chips">
+                    <div class="chip">MongoDB</div>
+                    <div class="chip">Redis</div>
+                    <div class="chip">MySQL</div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-name">Messaging & Observability</div>
+                <div class="skill-chips">
+                    <div class="chip">Kafka</div>
+                    <div class="chip">RabbitMQ</div>
+                    <div class="chip">OpenTelemetry</div>
+                    <div class="chip">Instana</div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-name">Testing & Practices</div>
+                <div class="skill-chips">
+                    <div class="chip">JUnit</div>
+                    <div class="chip">TDD</div>
+                    <div class="chip">Integration Testing</div>
+                    <div class="chip">FVT Frameworks</div>
+                    <div class="chip">Agile</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="arch">
+            <div class="arch-label">// typical system design flow</div>
+            <div class="arch-flow">
+                <div class="arch-node-wrap">
+                    <div class="arch-node">
+                        <div class="arch-icon">▢</div>
+                        <div class="arch-node-label">Client</div>
                     </div>
-                    <div class="proj-btn">
-                        <div class="proj-btns">
-                            <a href="https://github.com/fiercearyan/Portfolio" target="_blank">GitHub</a>
-                        </div>
-                        <div class="proj-btns">
-                            <a href="https://fiercearyan.github.io/Portfolio/" target="_blank">Live</a>
-                        </div>
+                    <div class="arch-line"></div>
+                </div>
+                <div class="arch-node-wrap">
+                    <div class="arch-node">
+                        <div class="arch-icon hot">◈</div>
+                        <div class="arch-node-label">API Gateway</div>
+                    </div>
+                    <div class="arch-line"></div>
+                </div>
+                <div class="arch-node-wrap">
+                    <div class="arch-node">
+                        <div class="arch-icon hot">⬡</div>
+                        <div class="arch-node-label">Service</div>
+                    </div>
+                    <div class="arch-line"></div>
+                </div>
+                <div class="arch-node-wrap">
+                    <div class="arch-node">
+                        <div class="arch-icon">◇</div>
+                        <div class="arch-node-label">Cache</div>
+                    </div>
+                    <div class="arch-line"></div>
+                </div>
+                <div class="arch-node-wrap">
+                    <div class="arch-node">
+                        <div class="arch-icon">▤</div>
+                        <div class="arch-node-label">Database</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- contact section start -->
-    <section class="contact" id="contact">
-        <div class="max-width">
-            <h2 class="title">Contact me</h2>
-            <div class="contact-content">
-                <div class="column left">
-                    <div class="text">
-                        <p>
-                            Open to exciting backend and platform engineering opportunities. Let's connect!
-                        </p>
-                    </div>
-
-                    <div class="icons">
-                        <div class="row">
-                            <i class="fas fa-user"></i>
-                            <div class="info">
-                                <div class="head">Name</div>
-                                <div class="sub-title">Aryan Kumar Singh</div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div class="info">
-                                <div class="head">Address</div>
-                                <div class="sub-title">Bangalore, India</div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <i class="fas fa-envelope"></i>
-                            <div class="info">
-                                <div class="head">Email</div>
-                                <div class="sub-title">aryankrsingh7@gmail.com</div>
-                            </div>
-                        </div>
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+        <div class="section-head">
+            <div class="section-num">05</div>
+            <h2 class="section-title">Projects</h2>
+        </div>
+        <div class="proj-grid">
+            <div class="proj-card">
+                <img class="proj-img" src="images/tripperr.png" alt="Tripperr — AI-powered travel planner">
+                <div class="proj-body">
+                    <div class="proj-name">Tripperr</div>
+                    <div class="proj-desc">AI-powered travel planning platform that generates personalized itineraries and trip recommendations.</div>
+                    <div class="proj-links">
+                        <a class="gh" href="https://github.com/Trip-perr/tripperr-backend" target="_blank" rel="noopener">GitHub →</a>
+                        <a class="lv" href="https://www.tripperr.in" target="_blank" rel="noopener">Live →</a>
                     </div>
                 </div>
-                <div class="column right">
-                    <div class="text">Message me</div>
-                    <form id="contact-form">
-                        <div class="fields">
-                            <div class="field name">
-                                <input type="text" name="name" placeholder="Name" required>
-                            </div>
-                            <div class="field email">
-                                <input type="email" name="email" placeholder="Email" required>
-                            </div>
-                        </div>
-                        <div class="field">
-                            <input type="text" name="subject" placeholder="Subject" required>
-                        </div>
-                        <div class="field textarea">
-                            <textarea name="message" cols="30" rows="10" placeholder="Your Message..."
-                                required></textarea>
-                        </div>
-                        <div class="button-area">
-                            <button type="submit">Send message</button>
-                        </div>
-                    </form>
+            </div>
+            <div class="proj-card">
+                <img class="proj-img" src="images/openroles.png" alt="OpenRoles — smart job discovery platform">
+                <div class="proj-body">
+                    <div class="proj-name">OpenRoles</div>
+                    <div class="proj-desc">Smart job discovery platform with AI-powered resume matching and refreshed job recommendations.</div>
+                    <div class="proj-links">
+                        <a class="gh" href="https://github.com/fiercearyan/RefreshedJobs" target="_blank" rel="noopener">GitHub →</a>
+                        <a class="lv" href="https://refreshed-jobs.vercel.app/" target="_blank" rel="noopener">Live →</a>
+                    </div>
+                </div>
+            </div>
+            <div class="proj-card">
+                <img class="proj-img" src="images/resumeai.png" alt="ResumeAI — ATS resume analyzer">
+                <div class="proj-body">
+                    <div class="proj-name">ResumeAI</div>
+                    <div class="proj-desc">ATS resume analyzer and optimizer powered by AI — score, gaps, and targeted improvement suggestions.</div>
+                    <div class="proj-links">
+                        <a class="gh" href="https://github.com/fiercearyan/ResumeAI" target="_blank" rel="noopener">GitHub →</a>
+                    </div>
+                </div>
+            </div>
+            <div class="proj-card">
+                <img class="proj-img" src="images/gp.png" alt="Grievance Portal — complaint management system">
+                <div class="proj-body">
+                    <div class="proj-name">Grievance Portal</div>
+                    <div class="proj-desc">Complaint management system with role-based access and issue tracking, for streamlined resolution.</div>
+                    <div class="proj-links">
+                        <a class="gh" href="https://github.com/fiercearyan/grievance-portal" target="_blank" rel="noopener">GitHub →</a>
+                        <a class="lv" href="https://fiercearyan.github.io/grievance-portal/" target="_blank" rel="noopener">Live →</a>
+                    </div>
+                </div>
+            </div>
+            <div class="proj-card">
+                <img class="proj-img" src="images/man.jpg" alt="Portfolio website of Aryan Kumar Singh">
+                <div class="proj-body">
+                    <div class="proj-name">Portfolio</div>
+                    <div class="proj-desc">This site — a personal portfolio showcasing projects, experience, and technical expertise.</div>
+                    <div class="proj-links">
+                        <a class="gh" href="https://github.com/fiercearyan/Portfolio" target="_blank" rel="noopener">GitHub →</a>
+                        <a class="lv" href="https://fiercearyan.github.io/Portfolio/" target="_blank" rel="noopener">Live →</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- footer section start -->
-    <footer>
-        <span>Created By <a href="#">Aryan</a></span>
-    </footer>
+    <!-- CONTACT -->
+    <section class="section" id="contact" style="padding-bottom: 120px;">
+        <div class="contact-card">
+            <div class="contact-left">
+                <div class="contact-kicker">06 / Get in touch</div>
+                <h2 class="contact-title">Let's build something.</h2>
+                <p class="contact-blurb">Open to backend and platform engineering roles. Based in Bangalore,
+                    India — happy to work remote or relocate.</p>
+            </div>
+            <div class="contact-actions">
+                <button class="btn-primary" id="copy-email" type="button">✉ aryankrsingh7@gmail.com</button>
+                <a href="https://github.com/fiercearyan" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://www.linkedin.com/in/aryan-singh07/" target="_blank" rel="noopener">LinkedIn</a>
+            </div>
+        </div>
+        <div class="footer">© 2026 Aryan Kumar Singh — built with care.</div>
+    </section>
 
     <script src="script.js"></script>
 </body>
