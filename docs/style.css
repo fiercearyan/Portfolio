@@ -573,6 +573,15 @@ section .title::after{
 .skills-content .right .agl::before{
     width: 95%;
 }
+.skills-content .right .sb::before{
+    width: 85%;
+}
+.skills-content .right .aws::before{
+    width: 75%;
+}
+.skills-content .right .kafka::before{
+    width: 75%;
+}
 
 /* teams section styling */
 .teams .title::after{

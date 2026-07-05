@@ -35,20 +35,20 @@ $(document).ready(function(){
 
    // typing text animation script
    var typed = new Typed(".typing", {
-       strings: ["Engineer", "Developer"],
+       strings: ["a Backend Engineer", "a Software Developer"],
        typeSpeed: 100,
        backSpeed: 60,
        loop: true
    });
 
    var typed = new Typed(".typing-2", {
-       strings: ["Engineer", "Developer"],
+       strings: ["a Backend Engineer", "a Software Developer"],
        typeSpeed: 100,
        backSpeed: 60,
        loop: true
    });
    var typed = new Typed(".typing-3", {
-       strings: ["Java", "Scala", "Go", "Docker", "Kubernetes", "Git", "Jenkins", "Redis", "MongoDB", "System Design"],
+       strings: ["Java", "Spring Boot", "Scala", "Go", "Docker", "Kubernetes", "AWS", "Kafka", "Redis", "MongoDB", "System Design"],
        typeSpeed: 100,
        backSpeed: 60,
        loop: true
