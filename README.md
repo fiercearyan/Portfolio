@@ -38,6 +38,6 @@ python3 -m http.server 8000   # then open http://localhost:8000
 
 ## Contact
 
-- Email: [aryankrsingh7@gmail.com](mailto:aryankrsingh7@gmail.com)
+- Email: [aryanksingh41@gmail.com](mailto:aryanksingh41@gmail.com)
 - LinkedIn: [in/aryan-singh07](https://www.linkedin.com/in/aryan-singh07/)
 - GitHub: [@fiercearyan](https://github.com/fiercearyan)

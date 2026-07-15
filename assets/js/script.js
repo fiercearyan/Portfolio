@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded', function () {
   var btn = document.getElementById('copy-email');
   if (!btn) return;
-  var email = 'aryankrsingh7@gmail.com';
+  var email = 'aryanksingh41@gmail.com';
   var original = btn.textContent;
   var timer = null;
 
